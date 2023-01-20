@@ -1,4 +1,5 @@
-import { Container, Nav, NavLink, Navbar as NavbarBs } from "react-bootstrap";
+import { Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
+import {NavLink} from "react-router-dom"
 
 const Navbar = () => {
   return (
