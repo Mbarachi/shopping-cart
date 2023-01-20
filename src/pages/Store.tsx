@@ -1,9 +1,20 @@
-import React from 'react'
+import stortItems from "../data/items.json";
+import { Row, Col } from "react-bootstrap";
+import StoreItem from "../components/StoreItem";
 
 const Store = () => {
   return (
-    <div>Store</div>
-  )
-}
+    <>
+      <div>Store</div>
+      <Row md="2" xs="1" lg={3} className="g-3">
+        {stortItems.map((item) => (
+          <Col key={item.id}>
+            <StoreItem {...item}/>
+          </Col>
+        ))}
+      </Row>
+    </>
+  );
+};
 
-export default Store
+export default Store;
